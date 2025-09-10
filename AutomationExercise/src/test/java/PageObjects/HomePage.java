@@ -14,6 +14,9 @@ public class HomePage extends BasePage
 	}
 	
 	//locator
+	@FindBy(how=How.XPATH, using="//div[@class='item active']//h1[1]")
+	WebElement txtHomepage;
+	
 	@FindBy(how=How.XPATH, using="//a[normalize-space()='Signup / Login']")
 	WebElement lnkSignupOrLogin;
 	
@@ -21,6 +24,11 @@ public class HomePage extends BasePage
 	public void clickSignupOrLogin()
 	{
 		lnkSignupOrLogin.click();
+	}
+	
+	public String confirmMessage() 
+	{
+		return txtHomepage.getText();
 	}
 
 }

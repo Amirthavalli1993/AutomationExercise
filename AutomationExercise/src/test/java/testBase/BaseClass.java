@@ -1,14 +1,20 @@
 package testBase;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -77,5 +83,25 @@ public class BaseClass
 	public void tearDown()
 	{
 		driver.quit();
+	}
+	
+	public String captureScreenshot(String testname)
+	{
+		String timeStamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		
+		TakesScreenshot screenshot=(TakesScreenshot)driver;
+		File sourcepath=screenshot.getScreenshotAs(OutputType.FILE);
+		String targetpath=".\\screenshots\\"+testname+"_"+timeStamp+".png";
+		
+		File target=new File(targetpath);
+		sourcepath.renameTo(target); 
+		
+		return targetpath;
+	}
+	
+	public String RandomeString()
+	{
+		String alphanumeric=RandomStringUtils.randomAlphanumeric(6);
+		return alphanumeric;
 	}
 }
