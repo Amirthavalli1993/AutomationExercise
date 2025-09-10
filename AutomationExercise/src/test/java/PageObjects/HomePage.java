@@ -20,6 +20,9 @@ public class HomePage extends BasePage
 	@FindBy(how=How.XPATH, using="//a[normalize-space()='Signup / Login']")
 	WebElement lnkSignupOrLogin;
 	
+	@FindBy(how=How.XPATH, using="//a[normalize-space()='Delete Account']")
+	WebElement btnDeleteAccount;
+	
 	//Actions	
 	public void clickSignupOrLogin()
 	{
@@ -29,6 +32,11 @@ public class HomePage extends BasePage
 	public String confirmMessage() 
 	{
 		return txtHomepage.getText();
+	}
+	
+	public void ClickDeleteAccount()
+	{
+		btnDeleteAccount.click();
 	}
 
 }

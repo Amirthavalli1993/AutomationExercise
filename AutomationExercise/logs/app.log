@@ -1,27 +1,36 @@
-2025-09-10 20:55:28 [main] INFO  testCases.TC001_RegisterUser - Validation: You are now on New User Signup! page
-2025-09-10 20:55:30 [main] INFO  testCases.TC001_RegisterUser - Validation: Verify that 'ENTER ACCOUNT INFORMATION' is visible
-2025-09-10 20:55:38 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Finished******
-2025-09-10 20:55:53 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1225554429\testng-customsuite.xml
+
+2025-09-10 21:16:39 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
+2025-09-10 21:16:40 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@3234f74e: 367 ms
+2025-09-10 21:16:40 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@2dbf4cbd: 29 ms
+2025-09-10 21:16:40 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@4c51bb7: 24 ms
+2025-09-10 21:16:40 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2364305a: 18 ms
+2025-09-10 21:16:40 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@5ddabb18: 20 ms
+2025-09-10 21:16:40 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3e8f7922: 0 ms
+2025-09-10 21:17:03 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\Admin\git\repository2\AutomationExercise\testng.xml
 
-2025-09-10 20:56:20 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Started******
-2025-09-10 20:56:20 [main] INFO  testCases.TC001_RegisterUser - Validation: Verifying the home page visibility
-2025-09-10 20:56:34 [main] INFO  testCases.TC001_RegisterUser - Validation: You are now on New User Signup! page
-2025-09-10 20:56:37 [main] INFO  testCases.TC001_RegisterUser - Validation: Verify that 'ENTER ACCOUNT INFORMATION' is visible
-2025-09-10 20:56:46 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Finished******
-2025-09-10 21:04:47 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2025-09-10 21:18:18 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Started******
+2025-09-10 21:18:18 [main] INFO  testCases.TC001_RegisterUser - Validation: Verifying the home page visibility
+2025-09-10 21:18:20 [main] INFO  testCases.TC001_RegisterUser - Validation: You are now on New User Signup! page
+2025-09-10 21:18:23 [main] INFO  testCases.TC001_RegisterUser - Validation: Verify that 'ENTER ACCOUNT INFORMATION' is visible
+2025-09-10 21:20:21 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Finished******
+2025-09-10 21:28:40 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\Admin\git\repository2\AutomationExercise\testng.xml
 
-2025-09-10 21:05:18 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Started******
-2025-09-10 21:05:18 [main] INFO  testCases.TC001_RegisterUser - Validation: Verifying the home page visibility
-2025-09-10 21:05:21 [main] INFO  testCases.TC001_RegisterUser - Validation: You are now on New User Signup! page
-2025-09-10 21:05:24 [main] INFO  testCases.TC001_RegisterUser - Validation: Verify that 'ENTER ACCOUNT INFORMATION' is visible
-2025-09-10 21:05:32 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Finished******
-2025-09-10 21:06:41 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\Admin\git\repository2\AutomationExercise\testng.xml
-
-2025-09-10 21:06:54 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Started******
-2025-09-10 21:06:54 [main] INFO  testCases.TC001_RegisterUser - Validation: Verifying the home page visibility
-2025-09-10 21:06:56 [main] INFO  testCases.TC001_RegisterUser - Validation: You are now on New User Signup! page
-2025-09-10 21:06:58 [main] INFO  testCases.TC001_RegisterUser - Validation: Verify that 'ENTER ACCOUNT INFORMATION' is visible
-2025-09-10 21:07:08 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Finished******
+2025-09-10 21:29:25 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Started******
+2025-09-10 21:29:34 [main] INFO  testCases.TC001_RegisterUser - Validation: Verifying the home page visibility
+2025-09-10 21:29:37 [main] INFO  testCases.TC001_RegisterUser - Validation: You are now on New User Signup! page
+2025-09-10 21:29:40 [main] INFO  testCases.TC001_RegisterUser - Validation: Verify that 'ENTER ACCOUNT INFORMATION' is visible
+2025-09-10 21:29:51 [main] INFO  testCases.TC001_RegisterUser - Account Created
+2025-09-10 21:30:42 [main] INFO  testCases.TC001_RegisterUser - Account Deleted
+2025-09-10 21:32:19 [main] INFO  testCases.TC001_RegisterUser - *******TC001_RegisterUser Finished******

@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.AccountCreatedPage;
+import PageObjects.AccountDeletePage;
 import PageObjects.EnterAccountInformationPage;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
@@ -78,8 +79,19 @@ public class TC001_RegisterUser extends BaseClass
 			{
 				System.out.println("Account created successfully");
 			}
+			log.info("Account Created");
+			accountcreation.ClickContinue();
+			home.ClickDeleteAccount();
 			
+			AccountDeletePage accountdelete=new AccountDeletePage(driver);
+			String msgdeleteconfirmation=accountdelete.VerifyAccountDeleted();
+			if(msgdeleteconfirmation.equals("ACCOUNT DELETED!"))
+			{
+				System.out.println("Account deleted Successfully");
+			}
+			log.info("Account Deleted");
 			
+			accountdelete.ClickContinue();
 		}
 		catch(Exception e)
 		{
