@@ -21,6 +21,9 @@ public class LoginPage extends BasePage
 	@FindBy(how=How.XPATH, using="//button[normalize-space()='Signup']")
 	WebElement btnSignup;
 	
+	@FindBy(how=How.XPATH, using="//h2[normalize-space()='New User Signup!']")
+	WebElement msgNewUserSignup;
+	
 	public void EnterName(String name)
 	{
 		txtName.sendKeys(name);
@@ -35,5 +38,9 @@ public class LoginPage extends BasePage
 	{
 		btnSignup.click();
 	}
-
+	
+	public String verifyNewUserSignup()
+	{
+		return msgNewUserSignup.getText();
+	}
 }
