@@ -24,6 +24,18 @@ public class LoginPage extends BasePage
 	@FindBy(how=How.XPATH, using="//h2[normalize-space()='New User Signup!']")
 	WebElement msgNewUserSignup;
 	
+	@FindBy(how=How.XPATH, using="//h2[normalize-space()='Login to your account']")
+	WebElement msgLoginAccount;
+	
+	@FindBy(how=How.XPATH, using="//input[@data-qa='login-email']")
+	WebElement txtemail;
+	
+	@FindBy(how=How.XPATH,using="//input[@placeholder='Password']")
+	WebElement txtpassword;
+	
+	@FindBy(how=How.XPATH, using="//button[normalize-space()='Login']")
+	WebElement btnLogin;
+	
 	public void EnterName(String name)
 	{
 		txtName.sendKeys(name);
@@ -42,5 +54,25 @@ public class LoginPage extends BasePage
 	public String verifyNewUserSignup()
 	{
 		return msgNewUserSignup.getText();
+	}
+	
+	public String verifyLoginPage()
+	{
+		return msgLoginAccount.getText();
+	}
+	
+	public void SendEmail(String email)
+	{
+		txtemail.sendKeys(email);
+	}
+	
+	public void SendPassword(String password)
+	{
+		txtpassword.sendKeys(password);
+	}
+	
+	public void ClickLogin()
+	{
+		btnLogin.click();
 	}
 }

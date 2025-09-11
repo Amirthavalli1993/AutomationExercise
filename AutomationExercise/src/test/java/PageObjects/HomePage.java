@@ -23,6 +23,12 @@ public class HomePage extends BasePage
 	@FindBy(how=How.XPATH, using="//a[normalize-space()='Delete Account']")
 	WebElement btnDeleteAccount;
 	
+	@FindBy(how=How.XPATH, using="//ul[@class='nav navbar-nav']/li[10]/a")
+	WebElement btnLoggedInAs;
+	
+	@FindBy(how=How.XPATH, using="//a[normalize-space()='Logout']")
+	WebElement btnLogout;
+	
 	//Actions	
 	public void clickSignupOrLogin()
 	{
@@ -37,6 +43,16 @@ public class HomePage extends BasePage
 	public void ClickDeleteAccount()
 	{
 		btnDeleteAccount.click();
+	}
+	
+	public String VerifyLoggedIn()
+	{
+		return btnLoggedInAs.getText();
+	}
+	
+	public void ClickLogout()
+	{
+		btnLogout.click();
 	}
 
 }
